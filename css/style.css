@@ -1,1 +1,74 @@
 Ini CSS
+#h1 {
+    text-align: center;
+}
+
+header>section {
+    text-align: center;
+}
+
+.section-content {
+    background-color: khaki;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+.section-content>h3 {
+    margin: 0;
+}
+
+#jajar-genjang {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: whitesmoke;
+    border: 0px;
+    color:blue;
+}
+
+.section-2>h2 {
+    text-align: center;
+}
+
+.image {
+    height: 100%;
+}
+
+#rumus-luas {
+    text-align: center;
+}
+
+#rumus {
+    text-align: center;
+}
+
+#hls {
+    text-align: center; 
+}
+
+input {
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+}
+
+#button-1 {
+    background-color: khaki;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+#button-2 {
+    background-color: indianred;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
