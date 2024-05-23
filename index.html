@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <mta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaa Assignment Calculator</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1 id="h1">Welcome to My Calculator</h1>
+        <h1>Welcome to Katik</h1>
         <section>
             <p>
-                Halloooo, welcome to my calculator:D
+                Hai Sobat, selamat datang di Katik!!
+            </p>
+            <p>
+                Sebuah web sederhana untuk menghitung nilai luas dan keliling segitiga
             </p>
         </section>
     </header>
@@ -26,18 +30,21 @@
         <button type="button" id="jajar-genjang"><u>Jajar Genjang</u></button>
     </section>
 
+    <!--luas segitiga-->
     <section>
         <div class="section-2">
             <h2>Luas Segitiga</h2>
         </div>
             
-        <div class="image">
+        <div class="imageluas">
             <img src="/image/segitiga.png">
+        </div>
 
-        <h4 id="rumus-luas">Rumus Luas Segitiga yaitu:</h4>
+        <h3>Rumus Luas Segitiga:</h3>
+
         <p id="rumus"><b>L = 1/2 x a x t</b></p>
         
-        <p>Di mana:</p>
+        <p>Keterangan:</p>
         <p>L = Luas</p>
         <p>a = Panjang Alas</p>
         <p>t = Tinggi</p>
@@ -45,7 +52,7 @@
     <hr/>
     <section>
         <header>
-            <h2 id="hls">Hitung Luas Segitiga</h2>
+            <h2 id="luas-segitiga">Hitung Luas Segitiga</h2>
         </header>
 
         <form action="" method="post">
@@ -58,11 +65,77 @@
                 <label>Tinggi</label>
                 <input id="tinggi" type="number">
             </div>
+            <br/>
+            <div>
+                <label>Luas</label>
+                <input id="luas" type="number">
+            </div>
+            <br/>
+            <div>
+                <button type="button" id="hitungLuas" onclick="hitungluas()">Hitung</button>
+            </div>
+            <br/>
+            <div>
+                <button type="button" id="resetLuas" onclick="resetluas()">Reset</button>
+            </div>
+        </form>
+    </section>
 
-            <p>Diketahui :</p>
+    <br><br>
 
-            <button type="buttontype" id="button-1">Hitung</button>
-            <button type="buttontype" id="button-2">OK</button>
+    <!--Keliling Segitiga-->
+    <section>
+        <div class="section-3">
+            <h2>Keliling Segitiga</h2>
+        </div>
+        
+        <div class="imagekeliling">
+            <img src="/image/keliling-segitiga.png">
+        </div>
+
+        <h3>Rumus Keliling Segitiga yaitu:</h3>
+        <p id="rumus"><b>K = S1 + S2 + S3</b></p>
+    
+        <p>Keterangan:</p>
+        <p>K = Keliling</p>
+        <p>S1 = Sisi a</p>
+        <p>S2 = Sisi b</p>
+        <p>S3 = Sisi c</p>
+    </section>
+    <hr/>
+    <section>
+        <header>
+            <h2 id="keliling-segitiga">Hitung Keliling Segitiga</h2>
+        </header>
+
+        <form action="" method="post">
+            <div>
+                <label>S1</label>
+                <input id="sisi-1" type="number">
+            </div>
+            <br/>
+            <div>
+                <label>S2</label>
+                <input id="sisi-2" type="number">
+            </div>
+            <br/>
+            <div>
+                <label>S3</label>
+                <input id="sisi-3" type="number">
+            </div>
+            <br/>
+            <div>
+                <label>Keliling</label>
+                <input id="keliling" type="number">
+            </div>
+            <br/>
+            <div>
+                <button type="button" id="hitungKeliling" onclick="hitungkeliling()">Hitung</button>
+            </div>
+            <br/>
+            <div>
+                <button type="button" id="resetKeliling" onclick="resetkeliling()">Reset</button>
+            </div>
         </form>
     </section>
 </body>
